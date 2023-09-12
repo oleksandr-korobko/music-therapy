@@ -19,5 +19,8 @@
   "homepage": "https://github.com/oleksandr-korobko/music-therapy#readme",
   "devDependencies": {
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2"
   }
 }
