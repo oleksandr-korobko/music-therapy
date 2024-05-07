@@ -16,7 +16,8 @@
   "bugs": {
     "url": "https://github.com/oleksandr-korobko/music-therapy/issues"
   },
-  "homepage": "https://github.com/oleksandr-korobko/music-therapy#readme",
+  "homepage": "https://github.com/oleksandr-korobko/music-therapy",
+  // "homepage": "https://github.com/oleksandr-korobko/music-therapy#readme",
   "devDependencies": {
     "tailwindcss": "^3.3.3"
   },
