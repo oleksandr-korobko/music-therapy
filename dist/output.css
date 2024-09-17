@@ -804,14 +804,6 @@ video {
   top: 0.25rem;
 }
 
-.-left-2 {
-  left: -0.5rem;
-}
-
-.-left-20 {
-  left: -5rem;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -921,6 +913,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-custom-margin {
+  margin-bottom: 24px;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -979,6 +975,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-custom-margin {
+  margin-top: 24px;
 }
 
 .box-border {
@@ -1131,6 +1131,10 @@ video {
   height: 64rem;
 }
 
+.h-36 {
+  height: 9rem;
+}
+
 .max-h-12 {
   max-height: 3rem;
 }
@@ -1245,16 +1249,6 @@ video {
 
 .border-separate {
   border-collapse: separate;
-}
-
-.translate-x-\[-0\.5rem\] {
-  --tw-translate-x: -0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[1\.5rem\] {
-  --tw-translate-x: 1.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .scale-x-\[-1\] {
@@ -1560,6 +1554,10 @@ video {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -2484,6 +2482,21 @@ video {
      object-fit: scale-down;
 }
 
+.object-right {
+  -o-object-position: right;
+     object-position: right;
+}
+
+.object-left {
+  -o-object-position: left;
+     object-position: left;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -3313,14 +3326,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:absolute {
-    position: absolute;
-  }
-
-  .sm\:relative {
-    position: relative;
-  }
-
   .sm\:col-start-2 {
     grid-column-start: 2;
   }
@@ -3345,14 +3350,6 @@ video {
     margin-top: 5rem;
   }
 
-  .sm\:ml-4 {
-    margin-left: 1rem;
-  }
-
-  .sm\:ml-40 {
-    margin-left: 10rem;
-  }
-
   .sm\:aspect-\[2\/1\] {
     aspect-ratio: 2/1;
   }
@@ -3371,35 +3368,6 @@ video {
 
   .sm\:max-w-xl {
     max-width: 36rem;
-  }
-
-  .sm\:translate-x-\[-0\.5rem\] {
-    --tw-translate-x: -0.5rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .sm\:translate-x-\[0\.5rem\] {
-    --tw-translate-x: 0.5rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .sm\:translate-x-\[1\.5rem\] {
-    --tw-translate-x: 1.5rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .sm\:-translate-x-2 {
-    --tw-translate-x: -0.5rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .sm\:scale-x-\[-1\] {
-    --tw-scale-x: -1;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .sm\:transform {
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .sm\:grid-cols-2 {
@@ -3560,10 +3528,6 @@ video {
     margin-top: 6rem;
   }
 
-  .lg\:ml-0 {
-    margin-left: 0px;
-  }
-
   .lg\:flex {
     display: flex;
   }
@@ -3664,6 +3628,10 @@ video {
     grid-column: span 2 / span 2;
   }
 
+  .xl\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .xl\:ml-48 {
     margin-left: 12rem;
   }
@@ -3678,6 +3646,10 @@ video {
 
   .xl\:max-w-2xl {
     max-width: 42rem;
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-3 {
