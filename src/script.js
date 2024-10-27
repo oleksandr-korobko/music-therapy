@@ -22,4 +22,17 @@ mobileMenuLogo.addEventListener('click', function(e) {
   mobileMenu.classList.add('hidden');
 });
 
-
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.nav__wrapper');
+  const nav = document.querySelector('.nav');
+  
+  if (window.innerWidth < 640) {  // для мобільних
+    if (window.scrollY > 100) {
+      header.classList.add('shadow');  // Tailwind класи
+      nav.classList.add('py-2');  // Tailwind класи
+    } else {
+      header.classList.remove('shadow');
+      nav.classList.remove('py-2');
+    }
+  }
+});
