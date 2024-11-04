@@ -1710,6 +1710,34 @@ video {
   grid-template-columns: 2fr 5fr;
 }
 
+.grid-cols-\[2fr_2fr_2fr\] {
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+.grid-cols-\[2fr_44fr_2fr\] {
+  grid-template-columns: 2fr 44fr 2fr;
+}
+
+.grid-cols-\[2fr_4fr_2fr\] {
+  grid-template-columns: 2fr 4fr 2fr;
+}
+
+.grid-cols-\[2fr_4fr_4fr\] {
+  grid-template-columns: 2fr 4fr 4fr;
+}
+
+.grid-cols-\[2fr_4fr_3fr\] {
+  grid-template-columns: 2fr 4fr 3fr;
+}
+
+.grid-cols-\[2fr_3fr_3fr\] {
+  grid-template-columns: 2fr 3fr 3fr;
+}
+
+.grid-cols-\[auto_auto_auto_auto\] {
+  grid-template-columns: auto auto auto auto;
+}
+
 .grid-rows-\[\] {
   grid-template-rows: ;
 }
@@ -1920,6 +1948,18 @@ video {
 
 .gap-24 {
   gap: 6rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-3\.5 {
+  gap: 0.875rem;
 }
 
 .gap-x-14 {
@@ -3999,8 +4039,20 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .xl\:grid-cols-\[2fr_5fr\] {
+    grid-template-columns: 2fr 5fr;
+  }
+
+  .xl\:grid-cols-\[1fr_2fr_2fr\] {
+    grid-template-columns: 1fr 2fr 2fr;
+  }
+
   .xl\:gap-8 {
     gap: 2rem;
+  }
+
+  .xl\:gap-24 {
+    gap: 6rem;
   }
 
   .xl\:pt-80 {
