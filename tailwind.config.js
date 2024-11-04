@@ -4,12 +4,11 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        'custom-margin': '24px', // Замініть '24px' на потрібне вам значення
+        'custom-margin': '24px',
       },
       transitionDuration: {
         '400': '400ms',
         '2000': '2000ms',
-        // Додайте будь-які інші власні значення
       }
     },
   },
