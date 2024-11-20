@@ -1,5 +1,27 @@
-// Open/Close Mobile Menu Logic
+window.addEventListener('load', function() {
+  if (window.location.hash) {
+    window.scrollTo(0, 0);
+    
+    const header = document.querySelector('.nav__wrapper');
+    const headerHeight = header.offsetHeight;
+    const targetElement = document.querySelector(window.location.hash);
+    
+    if (targetElement) {
+      const rect = targetElement.getBoundingClientRect();
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const absoluteTop = rect.top + scrollTop;
+      
+      const offset = window.innerWidth < 640 ? 33 : 2;
+      
+      window.scrollTo({
+        top: absoluteTop - headerHeight + offset,
+        behavior: 'smooth'
+      });
+    }
+  }
+});
 
+// Open/Close Mobile Menu Logic
 const openButton = document.querySelector('.my__open-button');
 const closeButton = document.querySelector('.my__close-button')
 const mobileMenu = document.querySelector('.my__mobile-menu');
