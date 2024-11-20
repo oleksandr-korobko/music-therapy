@@ -6,20 +6,22 @@
     <title>Підвищення інтелектуально-творчого потенціалу учнів засобами музикотерапії.</title>
     <link rel="stylesheet" href="../../../dist/output.css" />
   </head>
-  <body>
+    <body class="grid min-h-screen grid-rows-[auto_1fr_auto]">
+    <!-- Header -->
+
     <header class="inset-x-0 top-0 z-50">
-      <div class="nav__wrapper fixed bg-white inset-x-0 top-0 z-50">
+      <div class="nav__wrapper fixed bg-white inset-x-0 top-0 z-50 transition-[box-shadow,padding] duration-1000 ease-in-out shadow-[0_1px_4px_rgba(0,0,0,0.1)]">
         <nav
-          class="inset-x-0 top-0 mx-auto max-w-7xl flex items-center justify-between p-6 lg:px-8"
+          class="nav inset-x-0 top-0 mx-auto max-w-7xl flex items-center justify-between p-6 lg:px-8 transition-[padding] duration-1000 ease-in-out"
           aria-label="Global"
         >
           <div class="flex lg:flex-1">
             <a href="../../../index.html" class="-m-1.5 p-1.5">
               <span class="sr-only">Your Company</span>
               <img
-                class="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
+                class="h-8 lg:h-10 w-auto"
+                src="../../../img/logo.jpg"
+                alt="Company Logo"
               />
             </a>
           </div>
@@ -46,18 +48,41 @@
             </button>
           </div>
           <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-              >Product</a
+            <a href="../../../index.html#activities" 
+              class="text-sm font-semibold leading-6 text-gray-900
+                  hover:text-indigo-600 transition-all duration-300
+                    border-b-2 border-transparent hover:border-indigo-600"
             >
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-              >Features</a
+              Напрямки діяльності
+            </a>
+            <a href="../team.html" 
+              class="text-sm font-semibold leading-6 text-gray-900
+                  hover:text-indigo-600 transition-all duration-300
+                    border-b-2 border-transparent hover:border-indigo-600"
             >
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-              >Marketplace</a
+              Експерти
+            </a>
+            <a href="../military-meditation.html" 
+              class="text-sm font-semibold leading-6 text-gray-900
+                  hover:text-indigo-600 transition-all duration-300
+                    border-b-2 border-transparent hover:border-indigo-600"
             >
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-              >Company</a
+              Медитація для військових
+            </a>
+            <a href="../psychological-support.html" 
+              class="text-sm font-semibold leading-6 text-gray-900
+                  hover:text-indigo-600 transition-all duration-300
+                    border-b-2 border-transparent hover:border-indigo-600"
             >
+              Психологічна підтримка
+            </a>
+            <a href="../contacts.html" 
+              class="text-sm font-semibold leading-6 text-gray-900
+                  hover:text-indigo-600 transition-all duration-300
+                    border-b-2 border-transparent hover:border-indigo-600"
+            >
+              Контакти
+            </a>
           </div>
           <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
@@ -80,12 +105,12 @@
           class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
         >
           <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
+            <a href="../../../index.html" class="my__mobile-men--logo visible sm:invisible -m-1.5 p-1.5">
               <span class="sr-only">Your Company</span>
               <img
                 class="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
+                src="../../../img/logo.jpg"
+                alt="Company Logo"
               />
             </a>
             <button
@@ -113,30 +138,35 @@
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
                 <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Product</a
+                  href="../../../index.html#activities"
+                  class="my__activity-directions scroll-behavior -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-indigo-50"
+                  >Напрямки діяльності</a
                 >
                 <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Features</a
+                  href="../team.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-indigo-50"
+                  >Експерти</a
                 >
                 <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Marketplace</a
+                  href="../military-meditation.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-indigo-50"
+                  >Медитація для військових</a
                 >
                 <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Company</a
+                  href="../psychological-support.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-indigo-50"
+                  >Психологічна підтримка</a
+                >
+                <a
+                  href="../contacts.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-indigo-50"
+                  >Контакти</a
                 >
               </div>
               <div class="py-6">
                 <a
                   href="#"
-                  class="hidden -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  class="hidden -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-indigo-50"
                   >Log in</a
                 >
               </div>
@@ -145,28 +175,22 @@
         </div>
       </div>
     </header>
-    <article id="blog__article-1" class="bg-white px-6 py-32 lg:px-8">
+
+    <article id="blog__article-1" class="bg-white px-6 pt-24 md:pt-28 lg:pt-32 pb-20 lg:px-8">
       <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
         <p class="text-lg font-semibold leading-7 text-indigo-600">
           <strong> Ольга Безклинська </strong>
         </p>
         <h1
-          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          class="mt-2 mb-16 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
         >
           Підвищення інтелектуально-творчого потенціалу учнів засобами музикотерапії.
         </h1>
         <img
-          class="mt-16 aspect-video rounded-xl bg-gray-50 object-cover"
+          class="my-10 aspect-video rounded-xl bg-gray-50 object-cover"
           src="../../../img/blog/article_3_1.jpg"
           alt=""
         />
-        <figure class="mt-16">
-          <img
-            class="aspect-video rounded-xl bg-gray-50 object-cover"
-            src="../img/blog/article_3.JPG"
-            alt=""
-          />
-        </figure>
         <p class="mt-6 text-xl leading-8">
           <strong>Постановка проблеми.</strong> Україна переживає складні,
           доленосні часи: йде війна за збереження цілісності і незалежності
@@ -191,7 +215,7 @@
           здоров'я людини. Тому важливо розробити підходи щодо використання
           методів музикотерапії в комплексній реабілітації захисників України.
         </p>
-        <figure class="mt-10 border-l border-indigo-600 pl-9">
+        <figure class="my-10 border-l border-indigo-600 pl-9">
           <blockquote class="font-semibold text-gray-900">
             <p>
               “Впровадження курсу «Музикотерапія» не потребує особливої організації навчального процесу, легко вписується в рамки класно-урочної та класно-виховної системи, а також може практикуватися в будь-який час упродовж навчального дня.”
@@ -204,7 +228,7 @@
           дій.
         </p>
         <img
-          class="mt-16 aspect-video rounded-xl bg-gray-50 object-cover"
+          class="my-10 aspect-video rounded-xl bg-gray-50 object-cover"
           src="../../../img/blog/article_3_2.jpg"
           alt=""
         />
@@ -221,7 +245,7 @@
           Музикотерапія на сучасному етапі розглядається як  унікальна інтегративна оздоровча, психолого-педагогічна система. Для практичного запровадження музикотерапії нами була розроблена  програма курсу за вибором   «Музикотерапія», яка була схвалена Міністерством освіти і науки, молоді та спорту України, Інститутом інноваційних технологій і змісту освіти для використання у загальноосвітніх навчальних закладах (протокол №1 від 27 квітня 2012 р.). Основною метою курсу «Музикотерапія» є профілактика емоційно-стресових станів, розкриття інтелектуально-творчого потенціалу учнів та розвиток комунікативної культури.
         </p>
         <img
-          class="mt-16 aspect-video rounded-xl bg-gray-50 object-cover"
+          class="my-10 aspect-video rounded-xl bg-gray-50 object-cover"
           src="../../../img/blog/article_3_3.jpg"
           alt=""
         />
@@ -343,7 +367,7 @@
         <p class="mt-6">
           Програма з курсу «Музикотерапія» апробована в ліцеї № 157 м. Києва, в спеціалізованій загальноосвітній школі «Логос» №329 м. Київ , в ЗОШ № 17 м. Білої Церкви, у Шевченківській ЗОШ І – ІІ ступенів Вітовського району, Миколаївської області.  Адаптована програма з музикотерапії лежить в основі роботи гуртка «Музикотерапія»  реабілітаційному центрі «Шанс» для дітей хворих на ДЦП м. Білої Церкви.
         </p>
-        <figure class="mt-10 border-l border-indigo-600 pl-9">
+        <figure class="my-10 border-l border-indigo-600 pl-9">
           <blockquote class="font-semibold text-gray-900">
             <p>
               “Програма передбачає залучення до роботи не тільки учнів та вчителів, але й батьків, об’єднуючи зусилля для порозуміння, створення позитивної атмосфері в колективах та сім’ях. ”
@@ -374,6 +398,165 @@
         5.    Якушева  О.В.  К  проблеме  изучения  воздействия  музыки  на  выполнение  интеллектуальных  задач  подростками   //  Духовно-нравственное  наследие  И.П.  Павлова  и  современная  научная  мысль:  материалы  5-й  Международной  научно-практической  конференции  студентов  и  молодых  ученых,  23-25  апреля  2010  года  –  Рязань:  Ряз.  гос.  ун-т  им.  С.А.  Есенина,  2010  –  С. 44-46.
       </div>
     </article>
-    <script src="../src/script.js"></script>
+
+    <!-- Footer -->
+    <footer
+      class="bg-white shadow-[0_-1px_4px_rgba(0,0,0,0.1)]" 
+      aria-labelledby="footer-heading"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 pt-5 pb-8 grid gap-4 xl:grid-cols-[2fr_5fr] xl:gap-24">
+        <div>
+          <a
+            href="./contacts.html"
+            class="text-sm leading-6 text-gray-600"
+            >ГРОМАДСЬКА ОРГАНІЗАЦІЯ "ВСЕУКРАЇНСЬКА АСОЦІАЦІЯ МУЗИКОТЕРАПЕВТІВ УКРАЇНИ"</a
+          >
+          <div class="mt-3 flex space-x-6">
+            <a
+              href="https://www.youtube.com/@user-hj3we9nn3x/featured"
+              class="text-gray-400 hover:text-gray-500"
+            >
+              <span class="sr-only">YouTube</span>
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- mobile footer list -->
+        <div class="sm:hidden">  <!-- Додаємо sm:hidden щоб приховати на планшетах і більше -->
+          <div class="mb-6">
+            <h3 class="mb-4 text-sm font-semibold leading-6 text-gray-900">Асоціація</h3>
+            <div class="flex flex-col gap-4 pl-4">
+              <a href="./about.html" class="text-sm leading-6 text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                Про Нас
+              </a>
+              <a href="./team.html" class="text-sm leading-6 text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                Експерти
+              </a>
+              <a href="./contacts.html" class="text-sm leading-6 text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                Контакти
+              </a>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="mb-4 text-sm font-semibold leading-6 text-gray-900">Напрямки діяльності</h3>
+            <div class="flex flex-col gap-4 pl-4">
+              <a href="./mt_in_education.html" class="text-sm leading-6 text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                Музикотерапія в освіті
+              </a>
+              <a href="./mt_for_rehabilitation.html" class="text-sm leading-6 text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                Музикотерапія для психологічної реабілітації військовослужбовців
+              </a>
+              <a href="./mt_for_children_with_special_needs.html" class="text-sm leading-6 text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                Музикотерапія для дітей з особливими потребами
+              </a>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="mb-4 text-sm font-semibold leading-6 text-gray-900">Проекти</h3>
+            <div class="flex flex-col gap-4 pl-4">
+              <a href="./military-meditation.html" class="text-sm leading-6 text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                Медитація для військових
+              </a>
+              <a href="../../index.html#blog" class="text-sm leading-6 text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                Блог
+              </a>
+              <a href="./psychological-support.html" class="text-sm leading-6 text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                Психологічна підтримка
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- tablet and desktop footer list -->
+        <div class="hidden sm:grid gap-8 grid-cols-[2fr_3fr_3fr] xl:grid-cols-[1fr_2fr_2fr] grid-rows-[auto_auto_auto_auto] gap-y-2.5 gap-x-30">
+          <div>
+            <h3 class="pb-3 text-sm font-semibold leading-6 text-gray-900">
+              Асоціація
+            </h3>
+          </div>
+
+          <div>
+            <h3 class="pb-3 text-sm font-semibold leading-6 text-gray-900">
+              Напрямки діяльності
+            </h3>
+          </div>
+
+          <div>
+            <h3 class="pb-3 text-sm font-semibold leading-6 text-gray-900">
+              Проекти
+            </h3>
+          </div>
+
+          <div>
+            <a href="./about.html" class="text-sm leading-6 text-gray-600 hover:text-gray-900">
+              Про Нас
+            </a>
+          </div>
+
+          <div>
+            <a href="./mt_in_education.html" class="text-sm leading-6 text-gray-600 hover:text-gray-900">
+              Музикотерапія в освіті
+            </a>
+          </div>
+
+          <div>
+            <a href="./military-meditation.html" class="text-sm leading-6 text-gray-600 hover:text-gray-900">
+              Медитація для військових
+            </a>
+          </div>
+
+          <div>
+            <a href="./team.html" class="text-sm leading-6 text-gray-600 hover:text-gray-900">
+              Експерти
+            </a>
+          </div>
+
+          <div>
+            <a href="./mt_for_rehabilitation.html" class="mr-5 text-sm leading-6 text-gray-600 hover:text-gray-900">
+              Музикотерапія для психологічної <br> реабілітації військовослужбовців
+            </a>
+          </div>
+
+          <div>
+            <a href="../../index.html#blog" class="text-sm leading-6 text-gray-600 hover:text-gray-900">
+              Блог
+            </a>
+          </div>
+
+          <div>
+            <a href="./contacts.html" class="text-sm leading-6 text-gray-600 hover:text-gray-900">
+              Контакти
+            </a>
+          </div>
+
+          <div>
+            <a href="./mt_for_children_with_special_needs.html" class="pr-20 text-sm leading-6 text-gray-600 hover:text-gray-900">
+              Музикотерапія для дітей з <br> особливими потребами
+            </a>
+          </div>
+
+          <div>
+            <a href="./psychological-support.html" class="text-sm leading-6 text-gray-600 hover:text-gray-900">
+              Психологічна підтримка
+            </a>
+          </div>
+        </div>            
+      </div>
+    </footer>
+    <script src="../../../src/script.js"></script>
   </body>
 </html>
