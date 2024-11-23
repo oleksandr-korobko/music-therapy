@@ -144,3 +144,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+document.querySelector('.nav a[href="#"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// Add logo click handler for mobile menu
+document.querySelector('.my__mobile-men--logo').addEventListener('click', function(e) {
+  e.preventDefault();
+  closeMenu(); // Close the mobile menu first
+  setTimeout(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, 300); // Wait for menu close animation
+});
