@@ -21,27 +21,91 @@ window.addEventListener('load', function() {
   }
 });
 
-// Open/Close Mobile Menu Logic
+// Mobile Menu Logic
 const openButton = document.querySelector('.my__open-button');
-const closeButton = document.querySelector('.my__close-button')
+const closeButton = document.querySelector('.my__close-button');
 const mobileMenu = document.querySelector('.my__mobile-menu');
-const activityDirections = document.querySelector('.my__activity-directions');
-const mobileMenuLogo= document.querySelector('.my__mobile-men--logo');
+const backdrop = mobileMenu.querySelector('.fixed.inset-0');
+const menuPanel = mobileMenu.querySelector('.fixed.inset-y-0');
+const body = document.body;
 
-openButton.addEventListener('click', function(e) {
+function openMenu() {
+  // Показуємо меню
   mobileMenu.classList.remove('hidden');
+  // Даємо час для початку анімації
+  setTimeout(() => {
+    backdrop.classList.remove('opacity-0');
+    menuPanel.classList.remove('translate-x-full');
+  }, 10);
+  body.style.overflow = 'hidden';
+  console.log('Menu opened');
+}
+
+function closeMenu() {
+  // Запускаємо анімацію закриття
+  backdrop.classList.add('opacity-0');
+  menuPanel.classList.add('translate-x-full');
+  // Чекаємо завершення анімації перед приховуванням
+  setTimeout(() => {
+    mobileMenu.classList.add('hidden');
+    body.style.overflow = '';
+  }, 300); // Час має співпадати з duration-300
+  console.log('Menu closed');
+}
+
+// Open menu
+openButton.addEventListener('click', (e) => {
+  e.stopPropagation();
+  openMenu();
+  console.log('Open button clicked');
 });
 
-closeButton.addEventListener('click', function(e) {
-  mobileMenu.classList.add('hidden');
+// Close menu
+closeButton.addEventListener('click', closeMenu);
+
+// Close when clicking backdrop
+backdrop.addEventListener('click', (e) => {
+  console.log('Backdrop clicked', {
+    target: e.target,
+    currentTarget: e.currentTarget,
+    classList: e.target.classList
+  });
+  e.stopPropagation();
+  closeMenu();
 });
 
-activityDirections.addEventListener('click', function(e){
-  mobileMenu.classList.add('hidden');
+// Prevent clicks on menu content from closing
+menuPanel.addEventListener('click', (e) => {
+  // Перевіряємо, чи клік був по навігаційному посиланню
+  const isNavigationLink = e.target.tagName === 'A';
+  
+  // Якщо клік не по посиланню - закриваємо меню
+  if (!isNavigationLink) {
+    closeMenu();
+  }
+  
+  e.stopPropagation();
 });
 
-mobileMenuLogo.addEventListener('click', function(e) {
-  mobileMenu.classList.add('hidden');
+// Close on ESC key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeMenu();
+  }
+});
+
+// Close when clicking menu links
+mobileMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const href = this.getAttribute('href');
+
+    closeMenu();
+
+    setTimeout(() => {
+      window.location.href = href;
+    }, 300);
+  });
 });
 
 window.addEventListener('scroll', () => {
