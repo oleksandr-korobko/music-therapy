@@ -2509,6 +2509,121 @@ video {
      object-fit: scale-down;
 }
 
+.object-\[center_40\%\] {
+  -o-object-position: center 40%;
+     object-position: center 40%;
+}
+
+.object-\[center_10\%\] {
+  -o-object-position: center 10%;
+     object-position: center 10%;
+}
+
+.object-\[center_0\] {
+  -o-object-position: center 0;
+     object-position: center 0;
+}
+
+.object-\[0\] {
+  -o-object-position: 0;
+     object-position: 0;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
+.object-\[\434\443\430\435\] {
+  -o-object-position: дуае;
+     object-position: дуае;
+}
+
+.object-\[\434\443\430\] {
+  -o-object-position: дуа;
+     object-position: дуа;
+}
+
+.object-\[\434\] {
+  -o-object-position: д;
+     object-position: д;
+}
+
+.object-\[lt\] {
+  -o-object-position: lt;
+     object-position: lt;
+}
+
+.object-\[le\] {
+  -o-object-position: le;
+     object-position: le;
+}
+
+.object-\[left\] {
+  -o-object-position: left;
+     object-position: left;
+}
+
+.object-\[left\?\] {
+  -o-object-position: left?;
+     object-position: left?;
+}
+
+.object-\[left_\] {
+  -o-object-position: left;
+     object-position: left;
+}
+
+.object-\[left_10\] {
+  -o-object-position: left 10;
+     object-position: left 10;
+}
+
+.object-\[left_10\%\] {
+  -o-object-position: left 10%;
+     object-position: left 10%;
+}
+
+.object-left {
+  -o-object-position: left;
+     object-position: left;
+}
+
+.object-left-bottom {
+  -o-object-position: left bottom;
+     object-position: left bottom;
+}
+
+.object-left-top {
+  -o-object-position: left top;
+     object-position: left top;
+}
+
+.object-right-top {
+  -o-object-position: right top;
+     object-position: right top;
+}
+
+.object-top {
+  -o-object-position: top;
+     object-position: top;
+}
+
+.object-\[center_top\] {
+  -o-object-position: center top;
+     object-position: center top;
+}
+
+.object-\[top\] {
+  -o-object-position: top;
+     object-position: top;
+}
+
+.object-right {
+  -o-object-position: right;
+     object-position: right;
+}
+
 .p-1\.5 {
   padding: 0.375rem;
 }
@@ -2875,6 +2990,16 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-red-900 {
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+}
+
+.text-red-300 {
+  --tw-text-opacity: 1;
+  color: rgb(252 165 165 / var(--tw-text-opacity));
 }
 
 .underline {
