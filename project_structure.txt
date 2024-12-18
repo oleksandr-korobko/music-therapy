@@ -1,0 +1,33 @@
+/music-therapy-project
+│
+├── /src
+│   ├── /html
+│   │   ├── /blog
+│   │   │   ├── article_01.html
+│   │   │   ├── article_02.html
+│   │   │   ├── article_03.html
+│   │   ├── contacts.html
+│   │   ├── about.html
+│   │   ├── mt_for_children_with_special_needs.html
+│   │   ├── mt_in_education.html
+│   │   ├── psychological-support.html
+│   │   ├── team.html
+│   │   └── index.html
+│   │
+│   ├── /img
+│   │   ├── /blog
+│   │   │   ├── article_2.jpg
+│   │   │   ├── article_3_1.jpg
+│   │   │   ├── article_3_2.jpg
+│   │   │   ├── article_3_3.jpg
+│   │   ├── /psychological-support
+│   │   │   ├── psychological-support_1.jpg
+│   │   └── /about
+│   │       ├── about_1.jpeg
+│   │       └── Test.jpeg
+│   │
+│   ├── /script.js
+│   └── /style.css
+│
+└── README.md
+
