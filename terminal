@@ -1,3 +1,0 @@
-npx create-react-app react
-cd react
-npm install react-router-dom tailwindcss @headlessui/react @heroicons/react 
